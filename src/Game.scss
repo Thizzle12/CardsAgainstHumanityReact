@@ -1,0 +1,80 @@
+
+#game-header{
+  display: flex;
+
+  #score-box{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    flex: 1;
+  }
+
+  #black-card-container{
+      padding: 20px;
+      display: inline-block;
+      flex: 3;
+      text-align: center;
+
+      .black-card{
+        margin: 0 auto;
+        background: black;
+        color: white;
+      }
+  }
+
+  #title-container{
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      display: inline-block;
+      flex: 1;
+      text-align: center;
+  }
+}
+
+.btn{
+  margin: 0 auto;
+  padding:10px;
+  background: lightblue;
+  max-width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.card{
+  font-size: 0.8rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.player-cards-container{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  .white-card{
+    display: inline-block;
+    box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.2);
+    margin: 5px;
+    flex-grow: 1;
+
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 8px 8px 8px 0 rgba(0,0,255,0.2);
+    }
+
+  }
+  .chosen-card{
+    background: blue;
+    color: white;
+  }
+
+}
